@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="52">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="53"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаШапкаЛево" id="54">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шапка лево</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шапка лево</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаШапкаЛевоРасширеннаяПодсказка" id="55"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаШапкаКонфигурация" id="42">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа шапка конфигурация</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа шапка конфигурация</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаШапкаКонфигурацияРасширеннаяПодсказка" id="43"/>
+							<ChildItems>
+								<CheckBoxField name="ДляЭтойКонфигурации" id="36">
+									<DataPath>Объект.ДляЭтойКонфигурации</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДляЭтойКонфигурацииКонтекстноеМеню" id="37"/>
+									<ExtendedTooltip name="ДляЭтойКонфигурацииРасширеннаяПодсказка" id="38"/>
+									<Events>
+										<Event name="OnChange">ДляЭтойКонфигурацииПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<LabelField name="ИмяКонфигурации" id="44">
+									<DataPath>Объект.ИмяКонфигурации</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<ContextMenu name="ИмяКонфигурацииКонтекстноеМеню" id="45"/>
+									<ExtendedTooltip name="ИмяКонфигурацииРасширеннаяПодсказка" id="46"/>
+								</LabelField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаШапкаВерсия" id="47">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа шапка версия</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа шапка версия</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаШапкаВерсияРасширеннаяПодсказка" id="48"/>
+							<ChildItems>
+								<CheckBoxField name="ДляЭтойВерсии" id="39">
+									<DataPath>Объект.ДляЭтойВерсии</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДляЭтойВерсииКонтекстноеМеню" id="40"/>
+									<ExtendedTooltip name="ДляЭтойВерсииРасширеннаяПодсказка" id="41"/>
+									<Events>
+										<Event name="OnChange">ДляЭтойВерсииПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<LabelField name="ТекущаяВерсия1С" id="49">
+									<DataPath>Объект.ТекущаяВерсия1С</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<ContextMenu name="ТекущаяВерсия1СКонтекстноеМеню" id="50"/>
+									<ExtendedTooltip name="ТекущаяВерсия1СРасширеннаяПодсказка" id="51"/>
+								</LabelField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаШапкаПраво" id="56">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шапка право</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шапка право</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаШапкаПравоРасширеннаяПодсказка" id="57"/>
+					<ChildItems>
+						<CheckBoxField name="Бесплатные" id="58">
+							<DataPath>Объект.Бесплатные</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="БесплатныеКонтекстноеМеню" id="59"/>
+							<ExtendedTooltip name="БесплатныеРасширеннаяПодсказка" id="60"/>
+							<Events>
+								<Event name="OnChange">БесплатныеПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<CheckBoxField name="ДоступныеКУстановке" id="61">
+							<DataPath>Объект.ДоступныеКУстановке</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ДоступныеКУстановкеКонтекстноеМеню" id="62"/>
+							<ExtendedTooltip name="ДоступныеКУстановкеРасширеннаяПодсказка" id="63"/>
+							<Events>
+								<Event name="OnChange">ДоступныеКУстановкеПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Микросервисы" id="1">
+			<Representation>List</Representation>
+			<ReadOnly>true</ReadOnly>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Микросервисы</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+			</CommandSet>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="МикросервисыКонтекстноеМеню" id="2">
+				<ChildItems>
+					<Button name="МикросервисыКонтекстноеМенюСортироватьПоВозрастанию" id="71">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СортироватьПоВозрастанию</CommandName>
+						<ExtendedTooltip name="МикросервисыКонтекстноеМенюСортироватьПоВозрастаниюРасширеннаяПодсказка" id="72"/>
+					</Button>
+					<Button name="МикросервисыКонтекстноеМенюСортироватьПоУбыванию" id="73">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СортироватьПоУбыванию</CommandName>
+						<ExtendedTooltip name="МикросервисыКонтекстноеМенюСортироватьПоУбываниюРасширеннаяПодсказка" id="74"/>
+					</Button>
+				</ChildItems>
+			</ContextMenu>
+			<AutoCommandBar name="МикросервисыКоманднаяПанель" id="3">
+				<ChildItems>
+					<Button name="ФормаОбновить" id="32">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Обновить</CommandName>
+						<Picture>
+							<xr:Ref>StdPicture.Refresh</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="ФормаОбновитьРасширеннаяПодсказка" id="33"/>
+					</Button>
+					<Button name="РасширенияСортироватьПоВозрастанию" id="67">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СортироватьПоВозрастанию</CommandName>
+						<Picture>
+							<xr:Ref>StdPicture.SortListAsc</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="РасширенияСортироватьПоВозрастаниюРасширеннаяПодсказка" id="68"/>
+					</Button>
+					<Button name="РасширенияСортироватьПоУбыванию" id="69">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СортироватьПоУбыванию</CommandName>
+						<Picture>
+							<xr:Ref>StdPicture.SortListDesc</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="РасширенияСортироватьПоУбываниюРасширеннаяПодсказка" id="70"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="МикросервисыРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="МикросервисыСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>Микросервисы</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="МикросервисыСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="МикросервисыСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="МикросервисыСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>Микросервисы</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="МикросервисыСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="МикросервисыСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="МикросервисыУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>Микросервисы</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="МикросервисыУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="МикросервисыУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">МикросервисыВыбор</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="МикросервисыНомерСтроки" id="14">
+					<DataPath>Объект.Микросервисы.LineNumber</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="МикросервисыНомерСтрокиКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="МикросервисыНомерСтрокиРасширеннаяПодсказка" id="16"/>
+				</LabelField>
+				<InputField name="МикросервисыНаименование" id="17">
+					<DataPath>Объект.Микросервисы.Наименование</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="МикросервисыНаименованиеКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="МикросервисыНаименованиеРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="МикросервисыКраткоеОписание" id="20">
+					<DataPath>Объект.Микросервисы.КраткоеОписание</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="МикросервисыКраткоеОписаниеКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="МикросервисыКраткоеОписаниеРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="МикросервисыЦена" id="23">
+					<DataPath>Объект.Микросервисы.Цена</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="МикросервисыЦенаКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="МикросервисыЦенаРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<ColumnGroup name="МикросервисыГруппаДаты" id="34">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Микросервисы группа даты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Микросервисы группа даты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="МикросервисыГруппаДатыРасширеннаяПодсказка" id="35"/>
+					<ChildItems>
+						<InputField name="МикросервисыДатаСоздания" id="26">
+							<DataPath>Объект.Микросервисы.ДатаСоздания</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="МикросервисыДатаСозданияКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="МикросервисыДатаСозданияРасширеннаяПодсказка" id="28"/>
+						</InputField>
+						<InputField name="МикросервисыДатаОбновления" id="29">
+							<DataPath>Объект.Микросервисы.ДатаОбновления</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="МикросервисыДатаОбновленияКонтекстноеМеню" id="30"/>
+							<ExtendedTooltip name="МикросервисыДатаОбновленияРасширеннаяПодсказка" id="31"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<InputField name="МикросервисыЛайков" id="64">
+					<DataPath>Объект.Микросервисы.Лайков</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="МикросервисыЛайковКонтекстноеМеню" id="65"/>
+					<ExtendedTooltip name="МикросервисыЛайковРасширеннаяПодсказка" id="66"/>
+				</InputField>
+				<InputField name="МикросервисыГиперссылка" id="75">
+					<DataPath>Объект.Микросервисы.Гиперссылка</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="МикросервисыГиперссылкаКонтекстноеМеню" id="76"/>
+					<ExtendedTooltip name="МикросервисыГиперссылкаРасширеннаяПодсказка" id="77"/>
+				</InputField>
+				<InputField name="МикросервисыИсточник" id="81">
+					<DataPath>Объект.Микросервисы.Источник</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="МикросервисыИсточникКонтекстноеМеню" id="82"/>
+					<ExtendedTooltip name="МикросервисыИсточникРасширеннаяПодсказка" id="83"/>
+				</InputField>
+				<InputField name="МикросервисыАвтор" id="87">
+					<DataPath>Объект.Микросервисы.Автор</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="МикросервисыАвторКонтекстноеМеню" id="88"/>
+					<ExtendedTooltip name="МикросервисыАвторРасширеннаяПодсказка" id="89"/>
+				</InputField>
+				<InputField name="МикросервисыМетки" id="90">
+					<DataPath>Объект.Микросервисы.Метки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="МикросервисыМеткиКонтекстноеМеню" id="91"/>
+					<ExtendedTooltip name="МикросервисыМеткиРасширеннаяПодсказка" id="92"/>
+				</InputField>
+				<InputField name="МикросервисыУИДМикросервиса" id="84">
+					<DataPath>Объект.Микросервисы.УИДМикросервиса</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="МикросервисыУИДМикросервисаКонтекстноеМеню" id="85"/>
+					<ExtendedTooltip name="МикросервисыУИДМикросервисаРасширеннаяПодсказка" id="86"/>
+				</InputField>
+				<CheckBoxField name="МикросервисыДоступнаУстановка" id="93">
+					<DataPath>Объект.Микросервисы.ДоступнаУстановка</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="МикросервисыДоступнаУстановкаКонтекстноеМеню" id="94"/>
+					<ExtendedTooltip name="МикросервисыДоступнаУстановкаРасширеннаяПодсказка" id="95"/>
+				</CheckBoxField>
+				<InputField name="МикросервисыИмяПродукта" id="78">
+					<DataPath>Объект.Микросервисы.ИмяПродукта</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="МикросервисыИмяПродуктаКонтекстноеМеню" id="79"/>
+					<ExtendedTooltip name="МикросервисыИмяПродуктаРасширеннаяПодсказка" id="80"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.АгрегаторМикросервисов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Обновить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Обновить</Action>
+		</Command>
+		<Command name="СортироватьПоВозрастанию" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сортировать по возрастанию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сортировать по возрастанию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СортироватьПоВозрастанию</Action>
+		</Command>
+		<Command name="СортироватьПоУбыванию" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сортировать по убыванию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сортировать по убыванию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СортироватьПоУбыванию</Action>
+		</Command>
+	</Commands>
+</Form>
