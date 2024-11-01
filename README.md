@@ -40,6 +40,6 @@
   
 ![](https://infostart.ru/bitrix/templates/sandbox_empty/assets/tpl/abo/img/logo.svg)
 
--[Агрегатор микросервисов](https://infostart.ru/1c/tools/2215310/)
+-[Агрегатор микросервисов](https://infostart.ru/1c/tools/2215310/) (не захотели публиковать из-за конкуренции=) "Значит, хорошие сапоги, надо брать" Вера
 
   
